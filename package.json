@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "npx prisma generate --schema=./db/prisma/schema.prisma && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate --schema=./db/prisma/schema.prisma"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.4",
@@ -24,7 +25,9 @@
     "lucide-react": "^0.487.0",
     "next-auth": "^4.24.11",
     "react-toastify": "^11.0.5",
-    "recharts": "^2.15.2"
+    "recharts": "^2.15.2",
+    "prisma": "^5.10.0",
+    "@prisma/client": "^5.10.0"
   },
   "devDependencies": {
     "prettier": "^3.5.3"
